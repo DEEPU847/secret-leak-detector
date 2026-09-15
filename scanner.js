@@ -4,7 +4,7 @@ const fs = require('fs');
 const PATTERNS = {
     "AWS Access Key": /AKIA[0-9A-Z]{16}/,
     "GitHub Token": /ghp_[a-zA-Z0-9]{36}/,
-    "Generic API Key": /(?i)(api_key|apikey|secret|password|token)\s*=\s*['\"'][0-9a-zA-Z-_]{16,48}['\"']/
+    "Generic API Key": /(api_key|apikey|secret|password|token)\s*=\s*['"][0-9a-zA-Z-_]{16,48}['"]/i
 };
 
 function scanCode(content) {
