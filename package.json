@@ -1,0 +1,26 @@
+{
+  "name": "secret-leak-detector",
+  "version": "1.0.0",
+  "description": "A developer-side security utility built for **Problem 3 (Secret Leak Detector)** that prevents developers from accidentally committing sensitive API keys, database passwords, and tokens into Git repositories.",
+  "main": "scanner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DEEPU847/secret-leak-detector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DEEPU847/secret-leak-detector/issues"
+  },
+  "homepage": "https://github.com/DEEPU847/secret-leak-detector#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
